@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CALCULADORA DESIGN MODERNO</title>
+    <link rel="icon" href="calculadora.png" type="image/png" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+      <h1 class="title">Calculadora </h1>
+      <p>Design Moderno</p>
+    <div class="calculator">
+      <div class="wrapperDisplay">
+        <input class="value" id="res" type="text" readonly />
+        <div id="value"></div>
+        <div id="result"></div>
+      </div>
+      <section class="wrapperKeys">
+        <button class="num clear" onclick="reset()">
+          <span></span><span></span><span></span><span></span>c
+        </button>
+        <button class="num" onclick="backspace()">
+          <span></span><span></span><span></span><span></span
+          ><img src="backspace.svg" alt="" />
+        </button>
+        <button class="num" value="/" onclick="btnKey(value)">
+          <span></span><span></span><span></span><span></span>/
+        </button>
+        <button class="num" value="7" onclick="btnKey(value)">
+          <span></span><span></span><span></span><span></span>7
+        </button>
+        <button class="num" value="8" onclick="btnKey(value)">
+          <span></span><span></span><span></span><span></span>8
+        </button>
+        <button class="num" value="9" onclick="btnKey(value)">
+          <span></span><span></span><span></span><span></span>9
+        </button>
+        <button class="num" value="*" onclick="btnKey(value)">
+          <span></span><span></span><span></span><span></span>*
+        </button>
+        <button class="num" value="4" onclick="btnKey(value)">
+          <span></span><span></span><span></span><span></span>4
+        </button>
+        <button class="num" value="5" onclick="btnKey(value)">
+          <span></span><span></span><span></span><span></span>5
+        </button>
+        <button class="num" value="6" onclick="btnKey(value)">
+          <span></span><span></span><span></span><span></span>6
+        </button>
+        <button class="num plus" value="+" onclick="btnKey(value)">
+          <span></span><span></span><span></span><span></span>+
+        </button>
+        <button class="num" value="3" onclick="btnKey(value)">
+          <span></span><span></span><span></span><span></span>3
+        </button>
+        <button class="num" value="2" onclick="btnKey(value)">
+          <span></span><span></span><span></span><span></span>2
+        </button>
+        <button class="num" value="1" onclick="btnKey(value)">
+          <span></span><span></span><span></span><span></span>1
+        </button>
+        <button class="num" value="0" onclick="btnKey(value)">
+          <span></span><span></span><span></span><span></span>0
+        </button>
+        <button class="num" onclick="Equal()">
+          <span></span><span></span><span></span><span></span>=
+        </button>
+        <button class="num" value="." onclick="btnKey(value)">
+          <span></span><span></span><span></span><span></span>.
+        </button>
+        <button class="num equal" value="-" onclick="btnKey(value)">
+          <span></span><span></span><span></span><span></span>-
+        </button>
+      </section>
+    </div>
+    <footer>
+        <p>&copy; 2021 -Desenvolvido em HTML5, CSS e JS</p></footer><br>
+        <p class="name">By Jucilene Nunes</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html> 
